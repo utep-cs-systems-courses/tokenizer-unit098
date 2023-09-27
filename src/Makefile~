@@ -1,0 +1,14 @@
+CFLAGS=-g -O3
+
+OBJS= UI.o
+
+all: tokenmoment
+
+
+tokenmoment: $(OBJS)
+	cc -o tokenmoment $(CFLAGS) $(OBJS)
+
+clean:
+	rm -f *.o tokenmoment
+run:tokenmoment
+	./tokenmoment

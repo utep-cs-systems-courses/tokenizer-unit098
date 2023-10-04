@@ -1,10 +1,11 @@
+
 CFLAGS=-g -O3
 
-OBJS= UI.o tokenizer.o
+OBJS= UI.o tokenizer.o history.o
 
 all: tokenmoment
 
-$(OBJS):tokenizer.h
+$(OBJS):tokenizer.h history.h
 
 
 tokenmoment: $(OBJS)
